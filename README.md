@@ -3,7 +3,4 @@
 
 ### Atributos: umidade (%), temperatura (°C), presença de gases tóxicos, MP2.5 ($\mu g/m^3$), MP10 ($\mu g/m^3$)
 
-
-git remote add origin https://github.com/TheLusca/data-process.git
-git branch -M master
-git push -u origin master
+#### obs: nao esquecer de criar as pastas output, datapermonth na raiz do projeto
