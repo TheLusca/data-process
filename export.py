@@ -3,6 +3,7 @@ Aqui é feita a filtragem e a separação de dados por mês para a exportação 
 '''
 
 import pandas as pd
+import os
 
 with open("output/final.txt", "r") as file:
     data_str = file.read()
@@ -32,6 +33,11 @@ df["DATA"] = pd.to_datetime(df["DATA"])
 df["MES"] = df["DATA"].dt.month
 
 # Exportar os dados separados por mês para arquivos CSV
+
+if not os.path.isdir('datapermonth'):
+    os.makedirs('datapermonth')
+
+
 for mes in df["MES"].unique():
     df_mes = df[df["MES"] == mes]
     df_mes.to_csv(f"datapermonth/dados_mes_{mes}.csv", index=False)

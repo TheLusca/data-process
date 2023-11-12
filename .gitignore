@@ -1,4 +1,7 @@
 env
 data
+datapermonth
+output
 .TXT
 .txt
+main_old.py
