@@ -6,9 +6,10 @@ Ajuste de codigo para um novo formato de dados geredos pelos sensores
 import os
 
 
-arquivo = open('data/new format/TEST_04_09.TXT', 'r',
+arquivo = open('data/Gisele/TEST_08_08.TXT', 'r',
                encoding='utf-8', errors='ignore')
 dados = arquivo.readlines()
+
 
 if not os.path.isdir('output'):
     os.makedirs('output')
